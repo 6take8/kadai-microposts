@@ -22,6 +22,8 @@
                 <li>Logout</li>
               </ul>
             </li>
+            <li><%= link_to favorites_user_path(current_user) do %>Favorites List <% end %></li>
+
           <% else %>
             <li><%= link_to 'Signup', signup_path %></li>
             <li><%= link_to 'Login', login_path %></li>
